@@ -40,7 +40,7 @@ p {
   height: 1em;
   padding: 0;
   border: .05em solid rgba(0, 0, 0, .40);
-  vertical-align: sub;
+  vertical-align: calc(-.17em);
   border-radius: .17em;
   box-shadow: 0 -.5em .05em -.1em #ececec inset, 0 0 .05em 0 rgba(0, 0, 0, .4);
   background-color: #fff;
