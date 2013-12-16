@@ -3,6 +3,7 @@
 html {
   height: 100%;
   font-family: sans-serif;
+  text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -27,6 +28,7 @@ aside {
 main {
   height: 70%;
   font-size: 2em;
+  letter-spacing: -.025em;
 }
 label,
 p {
