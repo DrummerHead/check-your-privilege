@@ -1,13 +1,12 @@
 // Check your ECMAScript privilege
 
 
-var body = document.querySelector('body');
 var checkbox = document.getElementById('checkbox');
 var thanks = document.querySelector('aside');
 
 var adaptFontSize = function(e){
   var ems = window.innerWidth / 256;
-  body.setAttribute('style', 'font-size: ' + ems + 'em');
+  document.body.setAttribute('style', 'font-size: ' + ems + 'em');
 }
 
 var checkPrivilege = function(e){
