@@ -23,7 +23,6 @@ body * {
 main,
 aside {
   display: table-row;
-  font-size: .9em;
 }
 main {
   height: 70%;
@@ -33,8 +32,6 @@ label,
 p {
   display: table-cell;
   vertical-align: middle;
-}
-label {
 }
 #checkbox {
   display: inline-block;
@@ -55,7 +52,6 @@ label {
 }
 #checkbox i,
 aside p {
-  transition: 1s ease-in-out opacity;
   opacity: 0;
 }
 #checkbox.privilege-checked i,
@@ -67,10 +63,13 @@ aside.privilege-checked p {
   font-size: 1.4em;
   top: -.3em;
   right: -.1em;
+  transition: 250ms ease-in-out opacity;
 }
 aside {
   height: 30%;
+  font-size: .9em;
 }
 aside p {
   margin: 0;
+  transition: 1500ms ease-in opacity;
 }
