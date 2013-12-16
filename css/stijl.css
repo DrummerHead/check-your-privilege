@@ -38,19 +38,39 @@ label {
 }
 #checkbox {
   display: inline-block;
+  position: relative;
   width: 1em;
   height: 1em;
   padding: 0;
   border: .05em solid rgba(0, 0, 0, .40);
-  cursor: pointer;
   vertical-align: sub;
   border-radius: .17em;
   box-shadow: 0 -.5em .05em -.1em #ececec inset, 0 0 .05em 0 rgba(0, 0, 0, .4);
   background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+#checkbox.privilege-checked {
+  cursor: auto;
+}
+#checkbox i,
+aside p {
+  transition: 1s ease-in-out opacity;
+  opacity: 0;
+}
+#checkbox.privilege-checked i,
+aside.privilege-checked p {
+  opacity: 1;
+}
+#checkbox i {
+  position: absolute;
+  font-size: 1.4em;
+  top: -.3em;
+  right: -.1em;
 }
 aside {
   height: 30%;
 }
-p {
+aside p {
   margin: 0;
 }
